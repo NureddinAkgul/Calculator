@@ -14,10 +14,23 @@ body {
     max-width: 320px;
     align-content: center;
     margin-top: 300px;
+    background-color: black;
 }
 
-#container > button{
+#container > button {
     border-width: 2px;
+    border-radius: 5px;
+    background-color: rgb(59, 80, 77);
+    color: rgb(221, 202, 202);
+    font-size: 25px;
+}
+
+#container > button:hover {
+    background-color: rgb(76, 121, 114);
+}
+
+#container > button:active {
+    background-color: rgb(80, 150, 139);
 }
 
 #clean {
@@ -25,7 +38,7 @@ body {
     width: 320px;
 }
 
-.delete {
+#delete, #ac {
     width: 160px;
     height: 70px;
     border-width: 8px;
@@ -35,17 +48,22 @@ body {
     display: flex;
     color: white;
     background-color: black;
-    width: 320px;
 }
 
 #prevCalcs {
     align-items: flex-end;
     justify-content: flex-end;
     height: 35px;
+    width: 310px;
+    padding-right: 10px;
+    font-size: 17px;
 }
 
 #results {
-    align-items: flex-end;
+    align-items: center;
     justify-content: flex-end;
     height: 80px;
+    font-size: 40px;
+    width: 300px;
+    padding: 0 20px 0 0;
 }
